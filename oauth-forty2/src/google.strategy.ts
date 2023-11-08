@@ -22,9 +22,9 @@ export class FortytwoStrategy extends PassportStrategy (
 
   constructor () {
     super ({
-      clientID : process.env.GOOGLE_CLIENT_ID,
-      clientSecret : process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL : process.env.GOOGLE_CALLBACK_URL,
+      clientID : process.env.FORTYTWO_CLIENT_ID,
+      clientSecret : process.env.FORTYTWO_CLIENT_SECRET,
+      callbackURL : process.env.FORTYTWO_CALLBACK_URL,
       // scope : [ 'profile', 'email' ]
       scope: ['public'], // for 42
     });
