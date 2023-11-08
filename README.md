@@ -11,9 +11,9 @@ $ npm run go
 - POST : <kbd>http://localhost:10086/auth/signin</kbd>
   - bring two fields : `mail` and `pass`
 - POST : <kbd>http://localhost:10086/auth/logout</kbd>
-  - bring Header > Authorization > Bearer + `$access_token`
+  - Header > Authorization > Bearer + `$access_token`
 - POST : <kbd>http://localhost:10086/auth/refresh</kbd>
-  - bring Header > Authorization > Bearer + `$refresh_token`
+  - Header > Authorization > Bearer + `$refresh_token`
 ### END
 ```c
 $ docker compose down
@@ -33,9 +33,9 @@ $ npm run go
 - POST : <kbd>http://localhost:10086/auth/signin</kbd>
   - bring two fields : `mail` and `pass`
 - POST : <kbd>http://localhost:10086/auth/logout</kbd>
-  - bring Header > Authorization > Bearer + `$access_token`
+  - Header > Authorization > Bearer + `$access_token`
 - POST : <kbd>http://localhost:10086/auth/refresh</kbd>
-  - bring Header > Authorization > Bearer + `$refresh_token`
+  - Header > Authorization > Bearer + `$refresh_token`
 ### END
 ```c
 $ docker compose down
@@ -45,7 +45,7 @@ $ docker ps
 # OAUTH 42 Sandbox
 ### SETUP
 - Go to <kbd>setting > API > register a new app</kbd>
-- set redirect uri to <kbd>http://localhost:10086/auth/42/callback</kbd>
+- Set Redirect URI to <kbd>http://localhost:10086/auth/42/callback</kbd>
 ### RUN
 ```c
 $ npm run go
@@ -57,7 +57,7 @@ $ npm run start:dev
 # OAUTH Ggl Sandbox
 ### SETUP
 - Go to <kbd>https://console.cloud.google.com/apis/credentials</kbd>
-- set redirect uri to <kbd>http://localhost:10086/auth/google/callback</kbd>
+- Set Redirect URI to <kbd>http://localhost:10086/auth/google/callback</kbd>
 ### RUN
 ```c
 $ npm run go
