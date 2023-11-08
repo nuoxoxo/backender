@@ -5,13 +5,13 @@ $ npm run go
 ```
 ### RUN : 2 
 Use Postman or Insomnia
-- POST : <kbd>http://localhost:10086/auth/signup</kbd>
+- POST <kbd>http://localhost:10086/auth/signup</kbd>
   - bring two fields : `mail` and `pass`
-- POST : <kbd>http://localhost:10086/auth/signin</kbd>
+- POST <kbd>http://localhost:10086/auth/signin</kbd>
   - bring two fields : `mail` and `pass`
-- POST : <kbd>http://localhost:10086/auth/logout</kbd>
+- POST <kbd>http://localhost:10086/auth/logout</kbd>
   - Header > Authorization > Bearer + `$access_token`
-- POST : <kbd>http://localhost:10086/auth/refresh</kbd>
+- POST <kbd>http://localhost:10086/auth/refresh</kbd>
   - Header > Authorization > Bearer + `$refresh_token`
 ### END
 ```c
@@ -26,11 +26,11 @@ $ npm run go
 ```
 ### RUN : 2 
 Use Postman or Insomnia
-- POST : <kbd>http://localhost:10086/auth/signup</kbd>
+- POST <kbd>http://localhost:10086/auth/signup</kbd>
   - bring two fields : `mail` and `pass`
-- POST : <kbd>http://localhost:10086/auth/signin</kbd>
+- POST <kbd>http://localhost:10086/auth/signin</kbd>
   - bring two fields : `mail` and `pass`
-- POST : <kbd>http://localhost:10086/auth/logout</kbd>
+- POST <kbd>http://localhost:10086/auth/logout</kbd>
   - Header > Authorization > Bearer + `$access_token`
 - POST <kbd>http://localhost:10086/auth/refresh</kbd>
   - Header > Authorization > Bearer + `$refresh_token`
