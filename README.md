@@ -1,9 +1,9 @@
 # JWT Sandbox
-- ### RUN : 1
+### RUN : 1
 ```c
 $ npm run go
 ```
-- ### RUN : 2 
+### RUN : 2 
 - Postman / Insomnia
 - So, we have four routes 
 - POST : <kbd>http://localhost:10086/auth/signup</kbd>
@@ -14,18 +14,18 @@ $ npm run go
   - bring Header > Authorization > Bearer + `$access_token`
 - POST : <kbd>http://localhost:10086/auth/refresh</kbd>
   - bring Header > Authorization > Bearer + `$refresh_token`
-- ### END
+### END
 ```c
 $ docker compose down
 $ docker ps
 ``` 
 
 # JWT IMPROV Sandbox
-- ### RUN : 1
+### RUN : 1
 ```c
 $ npm run go
 ```
-- ### RUN : 2 
+### RUN : 2 
 - Postman / Insomnia
 - So, we have four routes 
 - POST : <kbd>http://localhost:10086/auth/signup</kbd>
@@ -36,17 +36,17 @@ $ npm run go
   - bring Header > Authorization > Bearer + `$access_token`
 - POST : <kbd>http://localhost:10086/auth/refresh</kbd>
   - bring Header > Authorization > Bearer + `$refresh_token`
-- ### END
+### END
 ```c
 $ docker compose down
 $ docker ps
 ``` 
 
 # OAUTH 42 Sandbox
-- ### SETUP
+### SETUP
 - Go to <kbd>setting > API > register a new app</kbd>
 - set redirect uri to <kbd>http://localhost:10086/auth/42/callback</kbd>
-- ### RUN
+### RUN
 ```c
 $ npm run go
 OR
@@ -55,10 +55,10 @@ $ npm run start:dev
 ```
 
 # OAUTH Google Sandbox
-- ### SETUP
+### SETUP
 - Go to <kbd>https://console.cloud.google.com/apis/credentials</kbd>
 - set redirect uri to <kbd>http://localhost:10086/auth/google/callback</kbd>
-- ### RUN
+### RUN
 ```c
 $ npm run go
 OR
