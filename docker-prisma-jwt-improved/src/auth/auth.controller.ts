@@ -12,25 +12,17 @@ import {
 @Controller('auth')
 export class AuthController {
 
-  /*
-  4 routes: (all under /auth)
-    - local/signup
-    - local/signin
-    - refresh
-    - logout
-  */
-
   constructor ( private authService: AuthService ) {}
 
   @Public()
-  @Post('/local/signup')
+  @Post('/signup')
   @HttpCode (HttpStatus.CREATED) // 201
   async local_signup (@Body() dto: AuthDto) : Promise<Token> {
     return this.authService.local_signup(dto)
   }
 
   @Public()
-  @Post('/local/signin')
+  @Post('/signin')
   @HttpCode (HttpStatus.OK) // 200
   async local_signin (@Body() dto: AuthDto) : Promise<Token> {
     return this.authService.local_signin(dto)

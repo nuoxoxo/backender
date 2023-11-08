@@ -18,7 +18,7 @@ export class AuthService {
   //               Signup                 //
   //////////////////////////////////////////
   local_signup = async (dto: AuthDto) : Promise<Token> => {
-    console.log("auth/local/signup :", {dto})
+    console.log("auth/signup :", {dto})
 
     // step : checker if user exists
 
@@ -41,7 +41,7 @@ export class AuthService {
 
     const tokens = await this.get_tokens(newcomer.id, newcomer.hash)
     await this.set_refresh_token(newcomer.id, tokens.refresh_token)
-    console.log("auth/local/signup @success :", {tokens})
+    console.log("auth/signup @success :", {tokens})
     return tokens
   }
 
@@ -49,7 +49,7 @@ export class AuthService {
   //               Signin                 //
   //////////////////////////////////////////
   local_signin = async (dto: AuthDto) : Promise<Token> => {
-    console.log("auth/local/signin :", {dto})
+    console.log("auth/signin :", {dto})
 
     // step : checker if user exists
 
@@ -69,7 +69,7 @@ export class AuthService {
 
     const tokens = await this.get_tokens(usermatch.id, usermatch.hash)
     await this.set_refresh_token(usermatch.id, tokens.refresh_token)
-    console.log("auth/local/signin @success :", {tokens})
+    console.log("auth/signin @success :", {tokens})
     return tokens
   }
 
