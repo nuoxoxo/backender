@@ -1,6 +1,5 @@
 - # SETUP
-- Go [here](https://console.cloud.google.com/apis/credentials)
-- name the project
+- Go to <kbd>https://console.cloud.google.com/apis/credentials</kbd>
 - set redirect uri to <kbd>http://localhost:10086/auth/google/callback</kbd>
 - # RUN
 ```c
