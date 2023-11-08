@@ -15,6 +15,8 @@ Use Postman or Insomnia
   - Header > Authorization > Bearer + `$refresh_token`
 ### END
 ```c
+$ docker stop $(docker ps -a -q)
+OR
 $ docker compose down
 $ docker ps
 ``` 
@@ -36,6 +38,8 @@ Use Postman or Insomnia
   - Header > Authorization > Bearer + `$refresh_token`
 ### END
 ```c
+$ docker stop $(docker ps -a -q)
+OR
 $ docker compose down
 $ docker ps
 ``` 
