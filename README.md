@@ -32,7 +32,7 @@ Use Postman or Insomnia
   - bring two fields : `mail` and `pass`
 - POST : <kbd>http://localhost:10086/auth/logout</kbd>
   - Header > Authorization > Bearer + `$access_token`
-- POST : <kbd>http://localhost:10086/auth/refresh</kbd>
+- POST <kbd>http://localhost:10086/auth/refresh</kbd>
   - Header > Authorization > Bearer + `$refresh_token`
 ### END
 ```c
