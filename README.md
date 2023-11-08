@@ -52,7 +52,7 @@ $ npm i
 $ npm run start:dev
 ```
 
-# OAUTH Ggl Sandbox
+# OAUTH Google Sandbox
 ### SETUP
 - Go to <kbd>https://console.cloud.google.com/apis/credentials</kbd>
 - Set Redirect URI to <kbd>http://localhost:10086/auth/google/callback</kbd>
