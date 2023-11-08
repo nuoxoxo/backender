@@ -1,21 +1,3 @@
-.env
-.*token
-
-*sandbox/*.js
-!*sandbox/runner*.js
-package-lock.json
-*/public/*
-!*/public/index.html
-*ts/src/*.js
-*.eslintrc.cjs
-
-.vscode/
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
 # compiled output
 /dist
 /node_modules
@@ -51,4 +33,3 @@ lerna-debug.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-
