@@ -42,7 +42,7 @@ $ docker ps
 
 # OAUTH 42 Sandbox
 ### SETUP
-- Go to <kbd>setting > API > register a new app</kbd>
+- Settings > API > register a new app
 - Set Redirect URI to <kbd>http://localhost:10086/auth/42/callback</kbd>
 ### RUN
 ```c
