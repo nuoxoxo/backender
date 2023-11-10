@@ -16,6 +16,9 @@ export class AppService {
     }
   }
 
-  hello () { return 'Hello' }
+  hello (req) {
+    // console.log(Object.keys(req).sort())
+    return 'Hello'
+  }
 
 }

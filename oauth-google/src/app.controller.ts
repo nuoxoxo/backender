@@ -13,7 +13,7 @@ export class AppController {
   // }
 
   @Get()
-  @UseGuards( AuthGuard('google') /*Possible BUG*/ )
+  @UseGuards( AuthGuard('google'))
   async googleAuth ( @Req() req) {
 
   }
@@ -21,6 +21,7 @@ export class AppController {
   @Get('auth/google/callback')
   @UseGuards(AuthGuard('google'))
   googleAuthRedirect( @Req() req ) {
+    this.appService.hello( req )
     return this.appService.googleLogin( req )
   }
 
