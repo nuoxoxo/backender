@@ -8,3 +8,8 @@ OR
 $ npm i
 $ npm run start:dev
 ```
+- # TODO
+```
+AUTH_URL="https://api.intra.ft.fr/oauth/authorize"
+TOKEN_URL="https://api.intra.ft.fr/oauth/token"
+```
