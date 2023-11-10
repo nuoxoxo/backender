@@ -24,11 +24,14 @@ export class AppService {
     if ( ! req.user)
       return 'no use(r)'
     return {
-      messgage: 'user info from ggl',
+      messgage: 'user info from 42 campus',
       user: req.user
     }
   }
 
-  hello () { return 'Hello' }
+  hello ( req ) {
+    console.log(Object.keys(req).sort())
+    return 'Hello'
+  }
 
 }

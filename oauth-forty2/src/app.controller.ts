@@ -38,6 +38,7 @@ export class AppController {
   @Get('auth/42/callback')
   @UseGuards(AuthGuard('42'/*'fortytwo'*/))
   fortytwoAuthRedirect( @Req() req ) {
+    this.appService.hello( req )
     return this.appService.fortytwoLogin( req )
   }
 }
