@@ -23,7 +23,7 @@ $ docker compose down
 $ docker ps
 ``` 
 
-<!------------ JWT ------------>
+<!------------ Docker Prisma JWT ------------>
 
 # Docker Prisma JWT 
 ### RUN : 1
