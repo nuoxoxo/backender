@@ -15,7 +15,7 @@ Use Postman or Insomnia
   - Header > Authorization > Bearer + `$access_token`
 - POST <kbd>http://localhost:10086/auth/refresh</kbd>
   - Header > Authorization > Bearer + `$refresh_token`
-### END
+### CLEANUP 
 ```c
 $ docker stop $(docker ps -a -q)
 OR
@@ -40,7 +40,7 @@ Use Postman or Insomnia
   - Header > Authorization > Bearer + `$access_token`
 - POST <kbd>http://localhost:10086/auth/refresh</kbd>
   - Header > Authorization > Bearer + `$refresh_token`
-### END
+### CLEANUP 
 ```c
 $ docker stop $(docker ps -a -q)
 OR
