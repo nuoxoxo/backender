@@ -1,11 +1,11 @@
 <!------------ Docker Prisma JWT IMPROV ------------>
 
 # Docker Prisma Jwt Improv.
-### RUN : 1
+### RUN : 1 - Server
 ```c
 $ npm run go
 ```
-### RUN : 2 
+### RUN : 2 - Routes
 Use Postman or Insomnia
 - POST <kbd>http://localhost:10086/auth/signup</kbd>
   - bring two fields : `mail` and `pass`
@@ -26,11 +26,11 @@ $ docker ps
 <!------------ Docker Prisma JWT ------------>
 
 # Docker Prisma JWT 
-### RUN : 1
+### RUN : 1 - Server
 ```c
 $ npm run go
 ```
-### RUN : 2 
+### RUN : 2 - Routes
 Use Postman or Insomnia
 - POST <kbd>http://localhost:10086/auth/signup</kbd>
   - bring two fields : `mail` and `pass`
