@@ -25,7 +25,7 @@ $ docker ps
 
 <!------------ JWT ------------>
 
-# JWT 
+# Jwt 
 ### RUN : 1
 ```c
 $ npm run go
