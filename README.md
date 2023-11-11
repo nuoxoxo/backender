@@ -1,6 +1,6 @@
 <!------------ JWT IMPROV ------------>
 
-# JWT IMPROV
+# Jwt Improv.
 ### RUN : 1
 ```c
 $ npm run go
