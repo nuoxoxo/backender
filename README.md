@@ -1,6 +1,6 @@
-<!------------ JWT IMPROV Sandbox ------------>
+<!------------ JWT IMPROV ------------>
 
-# JWT IMPROV Sandbox
+# JWT IMPROV
 ### RUN : 1
 ```c
 $ npm run go
@@ -23,9 +23,9 @@ $ docker compose down
 $ docker ps
 ``` 
 
-<!------------ JWT Sandbox ------------>
+<!------------ JWT ------------>
 
-# JWT Sandbox
+# JWT 
 ### RUN : 1
 ```c
 $ npm run go
@@ -50,7 +50,7 @@ $ docker ps
 
 <!------------ OAUTH 42 ------------>
 
-# OAUTH 42 Sandbox
+# OAUTH 42 
 ### SETUP
 - Go to Settings > API > register a new app
 - Set Redirect URI to <kbd>http://localhost:10086/auth/42/callback</kbd>
@@ -64,7 +64,7 @@ $ npm run start:dev
 
 <!------------ OAUTH Google ------------>
 
-# OAUTH Google Sandbox
+# OAUTH Google 
 ### SETUP
 - Go to <kbd>https://console.cloud.google.com/apis/credentials</kbd>
 - Set Redirect URI to <kbd>http://localhost:10086/auth/google/callback</kbd>
