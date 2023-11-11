@@ -76,5 +76,5 @@ $ npm i
 $ npm run start:dev
 ```
 
-> All projects moved here from 
+> All projects moved here from : \
 > [nuoxoxo/nn](https://github.com/nuoxoxo/nn)
