@@ -25,7 +25,7 @@ $ docker ps
 
 <!------------ JWT ------------>
 
-# JWT 
+# Docker Prisma JWT 
 ### RUN : 1
 ```c
 $ npm run go
