@@ -48,6 +48,39 @@ $ docker compose down
 $ docker ps
 ``` 
 
+
+<!------------ OAUTH 42 ------------>
+
+# OAUTH 42 
+### SETUP
+- Go to Settings > API > register a new app
+- Set Redirect URI to <kbd>http://localhost:10086/auth/42/callback</kbd>
+### RUN
+```c
+$ npm run go
+OR
+$ npm i
+$ npm run start:dev
+```
+
+<!------------ OAUTH Google ------------>
+
+# OAUTH Google 
+### SETUP
+- Go to <kbd>https://console.cloud.google.com/apis/credentials</kbd>
+- Set Redirect URI to <kbd>http://localhost:10086/auth/google/callback</kbd>
+### RUN
+```c
+$ npm run go
+OR
+$ npm i
+$ npm run start:dev
+```
+# &#8203;
+All projects moved here from : \
+[nuoxoxo/nn](https://github.com/nuoxoxo/nn)
+
+
 <!------------ NGINX ------------>
 
 # Nginx sandbox
@@ -101,34 +134,3 @@ $ kill -9 PID
 ```j
 $ docker stop $(docker ps -aq)  
 ```
-
-<!------------ OAUTH 42 ------------>
-
-# OAUTH 42 
-### SETUP
-- Go to Settings > API > register a new app
-- Set Redirect URI to <kbd>http://localhost:10086/auth/42/callback</kbd>
-### RUN
-```c
-$ npm run go
-OR
-$ npm i
-$ npm run start:dev
-```
-
-<!------------ OAUTH Google ------------>
-
-# OAUTH Google 
-### SETUP
-- Go to <kbd>https://console.cloud.google.com/apis/credentials</kbd>
-- Set Redirect URI to <kbd>http://localhost:10086/auth/google/callback</kbd>
-### RUN
-```c
-$ npm run go
-OR
-$ npm i
-$ npm run start:dev
-```
-# &#8203;
-All projects moved here from : \
-[nuoxoxo/nn](https://github.com/nuoxoxo/nn)
