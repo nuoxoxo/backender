@@ -48,6 +48,60 @@ $ docker compose down
 $ docker ps
 ``` 
 
+<!------------ NGINX ------------>
+
+# Nginx sandbox
+### RUN nginx
+```
+$ cd ~
+$ cd /usr/local/etc/nginx
+$ nginx
+
+or
+
+$ nginx -c /___path___/nginx.conf 
+```
+-s: Signal
+```
+$ nginx -s stop
+$ nginx -s reload
+```
+
+### TEST Bouncer
+Docker
+```j
+*** Build docker image ***
+
+$ docker build . -t voila_server
+
+*** Run containers based on the image ***
+
+$ docker run -p 7777:10086 -d voila_server
+$ docker run -p 8888:10086 -d voila_server
+$ docker run -p 9999:10086 -d voila_server
+
+*** Visit ***
+
+http://localhost:7777
+http://localhost:8888
+http://localhost:9999
+```
+Nginx 
+```j
+$ nginx
+
+*** then look at the backlog ***
+```
+Bad luck
+```
+$ ps -ef | grep nginx
+$ kill -9 PID
+```
+### CLEANUP 
+```j
+$ docker stop $(docker ps -aq)  
+```
+
 <!------------ OAUTH 42 ------------>
 
 # OAUTH 42 
