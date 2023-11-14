@@ -82,7 +82,7 @@ $ npm run start:dev
 
 # Nginx sandbox
 ### RUN nginx
-```
+```j
 $ cd ~
 $ cd /usr/local/etc/nginx
 $ nginx
@@ -91,39 +91,42 @@ or
 
 $ nginx -c /___path___/nginx.conf 
 ```
--s: Signal
-```
+```j
+use -s: Signal
+
 $ nginx -s stop
 $ nginx -s reload
 ```
 
 ### TEST Bouncer
-Docker
-```j
-*** Build docker image ***
+- Docker
+```
+Build docker image 
 
 $ docker build . -t voila_server
-
-*** Run containers based on the image ***
+```
+```
+Run containers based on the image
 
 $ docker run -p 7777:10086 -d voila_server
 $ docker run -p 8888:10086 -d voila_server
 $ docker run -p 9999:10086 -d voila_server
-
-*** Visit ***
+```
+```
+Visit 
 
 http://localhost:7777
 http://localhost:8888
 http://localhost:9999
 ```
-Nginx 
+- Nginx 
 ```j
-$ nginx
+Look at the backlog for proofs of bouncing
 
-*** then look at the backlog ***
+$ nginx
 ```
-Bad luck
-```
+- In case of bad luck
+```j
 $ ps -ef | grep nginx
 $ kill -9 PID
 ```
