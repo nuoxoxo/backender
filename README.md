@@ -103,14 +103,14 @@ $ nginx -s reload
 ```
 Build docker image 
 
-$ docker build . -t voila_server
+$ docker build . -t imagename
 ```
 ```
 Run containers based on the image
 
-$ docker run -p 7777:10086 -d voila_server
-$ docker run -p 8888:10086 -d voila_server
-$ docker run -p 9999:10086 -d voila_server
+$ docker run -p 7777:10086 -d imagename
+$ docker run -p 8888:10086 -d imagename
+$ docker run -p 9999:10086 -d imagename
 ```
 ```
 Visit 
