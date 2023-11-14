@@ -139,5 +139,5 @@ $ docker stop $(docker ps -aq)
 <!------------ FOOTNOTE ------------>
 
 # &#8203;
-All projects moved here from : \
+All projects sprawned from : \
 [nuoxoxo/nn](https://github.com/nuoxoxo/nn)
