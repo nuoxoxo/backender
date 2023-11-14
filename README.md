@@ -99,12 +99,13 @@ $ nginx -s reload
 ```
 
 ### TEST Bouncer
-- Docker
+- Build image
 ```
 Build docker image 
 
 $ docker build . -t imagename
 ```
+- Build container(s)
 ```
 Run containers based on the image
 
@@ -112,12 +113,9 @@ $ docker run -p 7777:10086 -d imagename
 $ docker run -p 8888:10086 -d imagename
 $ docker run -p 9999:10086 -d imagename
 ```
+- Visite any one of the servers defined above
 ```
-Visit 
-
-http://localhost:7777
-http://localhost:8888
-http://localhost:9999
+> http://localhost:PORT
 ```
 - Nginx 
 ```j
