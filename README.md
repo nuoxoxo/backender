@@ -76,9 +76,6 @@ OR
 $ npm i
 $ npm run start:dev
 ```
-# &#8203;
-All projects moved here from : \
-[nuoxoxo/nn](https://github.com/nuoxoxo/nn)
 
 
 <!------------ NGINX ------------>
@@ -134,3 +131,10 @@ $ kill -9 PID
 ```j
 $ docker stop $(docker ps -aq)  
 ```
+
+
+<!------------ FOOTNOTE ------------>
+
+# &#8203;
+All projects moved here from : \
+[nuoxoxo/nn](https://github.com/nuoxoxo/nn)
