@@ -2,9 +2,11 @@
 
 # Tcd
 
-- [ ] add - custom table theme
-- [ ] mod - wallpaper everywhere
-- [ ] mod - ft_tcd header
+- Pong
+  - [ ] add - custom table theme
+  - [ ] mod - bg color (now dimmed blue)
+  - [ ] mod - wallpaper everywhere
+  - [ ] mod - ft_tcd header
   - `somewhere/logo.297ed23d4b73a363f8ce.png` 
 - [ ] know - manifest.json
   - maybe a default preset file
