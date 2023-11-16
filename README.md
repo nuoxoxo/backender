@@ -2,9 +2,11 @@
 
 # Tcd
 
-- [ ] to modf - ft_tcd header
+- [ ] add - custom table theme
+- [ ] mod - wallpaper everywhere
+- [ ] mod - ft_tcd header
   - `somewhere/logo.297ed23d4b73a363f8ce.png` 
-- [ ] to know - manifest.json
+- [ ] know - manifest.json
   - maybe a default preset file
 
 <!------------ Docker Prisma JWT IMPROV ------------>
