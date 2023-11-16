@@ -1,6 +1,9 @@
 <!------------  ------------>
 
+# Tcd
 
+- [ ] tomod : ft_tcd header - `somewhere/logo.297ed23d4b73a363f8ce.png` 
+- [ ] toknow: manifest.json - maybe a default preset file
 
 <!------------ Docker Prisma JWT IMPROV ------------>
 
