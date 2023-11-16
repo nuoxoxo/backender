@@ -121,7 +121,7 @@ $ docker run -p 9999:10086 -d imagename
 ```j
 $ nginx
 
-Check the backlog for bouncing proofs
+Check the backlog for proofs
 ```
 - In case of bad luck
 ```j
