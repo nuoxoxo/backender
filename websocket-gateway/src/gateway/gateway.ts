@@ -1,32 +1,3 @@
-# Create a WebSocket Gateway Server
-Doc: [Gateways | NestJS](https://docs.nestjs.com/websockets/gateways)
-
-# Story Mode
-
-```
-↑ [recv]: listen on 'route_two' in [Events]
-↑ 
-↑ [send]: send to 'route_one' (pattern to be fulfilled)
-↑ [send]: fill in [Message] 
-↑ 
-↑ Connect ➜ http://localhost:10086
-↑ Postman ➜ New ➜ Socket.IO request
-↑
-*** Test: sending request on Postman ***
-```
-- Postman: ✅ 
-- Insomnia: No Socket IO [support](https://github.com/Kong/insomnia/issues/5884) 
-```sc
-// src/gateway/gateway.module.ts
-
-@Module({
-  providers: [myGateway]
-})
-export class GatewayModule {}
-```
-```ts
-// src/gateway/gateway.ts
-
 import { OnModuleInit } from "@nestjs/common";
 import { Server } from "socket.io";
 import {
@@ -70,11 +41,3 @@ export class myGateway implements OnModuleInit {
     )
   }
 }
-```
-```
-$ npm run start:dev
-$ npm i --save @nestjs/websockets @nestjs/platform-socket.io
-$ nest new websocket-gateway
-↑
-*
-```
