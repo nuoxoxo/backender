@@ -22,7 +22,7 @@ Use Postman or Insomnia
 ### CLEANUP 
 ```c
 $ docker stop $(docker ps -a -q)
-OR
+or
 $ docker compose down
 $ docker ps
 ``` 
@@ -47,7 +47,7 @@ Use Postman or Insomnia
 ### CLEANUP 
 ```c
 $ docker stop $(docker ps -a -q)
-OR
+or
 $ docker compose down
 $ docker ps
 ``` 
@@ -62,7 +62,7 @@ $ docker ps
 ### RUN
 ```c
 $ npm run go
-OR
+or
 $ npm i
 $ npm run start:dev
 ```
@@ -76,7 +76,7 @@ $ npm run start:dev
 ### RUN
 ```c
 $ npm run go
-OR
+or
 $ npm i
 $ npm run start:dev
 ```
