@@ -4,7 +4,7 @@
 
 <!------------ Docker Prisma JWT IMPROV ------------>
 
-# Docker Prisma Jwt Improv. 
+# 🟢 Docker Prisma Jwt Improv. 
 ### RUN : 1 - Server
 ```c
 $ npm run go
@@ -29,7 +29,7 @@ $ docker ps
 
 <!------------ Docker Prisma JWT ------------>
 
-# Docker Prisma JWT 
+# 🟢 Docker Prisma JWT 
 ### RUN : 1 - Server
 ```c
 $ npm run go
@@ -55,7 +55,7 @@ $ docker ps
 
 <!------------ OAUTH 42 ------------>
 
-# OAUTH 42 
+# 🟢 OAUTH 42 
 ### SETUP
 - Go to Settings > API > register a new app
 - Set Redirect URI to <kbd>http://localhost:10086/auth/42/callback</kbd>
@@ -69,7 +69,7 @@ $ npm run start:dev
 
 <!------------ OAUTH Google ------------>
 
-# OAUTH Google 
+# 🟢 OAUTH Google 
 ### SETUP
 - Go to <kbd>https://console.cloud.google.com/apis/credentials</kbd>
 - Set Redirect URI to <kbd>http://localhost:10086/auth/google/callback</kbd>
@@ -84,7 +84,7 @@ $ npm run start:dev
 
 <!------------ NGINX ------------>
 
-# Nginx sandbox
+# 🟢 Nginx sandbox
 ### RUN nginx
 ```j
 $ cd ~
@@ -137,7 +137,7 @@ $ kill -9 PID
 $ docker stop $(docker ps -aq)  
 ```
 
-# Create a WebSocket Gateway Server
+# 🟢 Create a WebSocket Gateway Server
 Doc: [Gateways | NestJS](https://docs.nestjs.com/websockets/gateways)
 ```
 *
@@ -245,7 +245,7 @@ export class myGateway implements OnModuleInit {
 ```
 
 
-# Make a client
+# 🟢 Make a client
 Doc: [Gateways | NestJS](https://docs.nestjs.com/websockets/gateways)
 ```
 *
