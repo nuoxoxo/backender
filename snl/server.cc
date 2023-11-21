@@ -41,6 +41,8 @@ void    handle_consumer_input (int);
 void    handle_incoming_conn ();
 void    bind_and_listen (int);
 void    create_socket ();
+void    print_owl();
+
 
 int main(int ac, char **v)
 {
@@ -89,6 +91,15 @@ int main(int ac, char **v)
 
 // 
 
+void print_owl()
+{
+    std::cout << "     ×___×           \n\
+     (o,o)       ____\n\
+     [`\"']      /___/ \n\
+------\" \"------/____ \n\
+            \\_\\  \\__\\\n\n";
+}
+
 void create_socket ()
 {
     if ((sock = socket(AF_INET, SOCK_STREAM, 0)) == -1)
@@ -118,6 +129,7 @@ void    bind_and_listen(int port)
     }
     std::cout << "on port " << port << "\n";
     std::cout << "listening \n\n";
+    print_owl();
 }
 
 void    handle_consumer_input(int fd)
