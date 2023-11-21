@@ -2,9 +2,7 @@
 
 <!------------ Docker Prisma JWT IMPROV ------------>
 
-# 🟢 SNL - Serve next line 
-
-<details><summary></summary>
+<details><summary>🟢 SNL - Serve next line </summary>
 
 ### RUN
 ```
@@ -20,9 +18,7 @@ $ nc -v "nchamber-nseat" PORT
 
 <!------------ Docker Prisma JWT IMPROV ------------>
 
-# 🟢 Docker Prisma Jwt Improv. 
-
-<details><summary></summary>
+<details><summary>🟢 Docker Prisma Jwt Improv. </summary>
 
 ### RUN : 1 - Server
 ```c
@@ -50,9 +46,7 @@ $ docker ps
 
 <!------------ Docker Prisma JWT ------------>
 
-# 🟢 Docker Prisma JWT 
-
-<details><summary></summary>
+<details><summary>🟢 Docker Prisma JWT </summary>
 
 ### RUN : 1 - Server
 ```c
@@ -80,9 +74,7 @@ $ docker ps
 
 <!------------ OAUTH 42 ------------>
 
-# 🟢 OAUTH 42 
-
-<details><summary></summary>
+<details><summary>🟢 OAUTH 42 </summary>
 
 ### SETUP
 - Go to Settings > API > register a new app
@@ -99,9 +91,7 @@ $ npm run start:dev
 
 <!------------ OAUTH Google ------------>
 
-# 🟢 OAUTH Google 
-
-<details><summary></summary>
+<details><summary>🟢 OAUTH Google </summary>
 
 ### SETUP
 - Go to <kbd>https://console.cloud.google.com/apis/credentials</kbd>
@@ -118,9 +108,7 @@ $ npm run start:dev
 
 <!------------ NGINX ------------>
 
-# 🟢 Nginx sandbox
-
-<details><summary></summary>
+<details><summary>🟢 Nginx sandbox</summary>
 
 ### RUN nginx
 ```j
@@ -176,9 +164,7 @@ $ docker stop $(docker ps -aq)
 
 </details>
 
-# 🟢 Create a WebSocket Gateway Server
-
-<details><summary></summary>
+<details><summary>🟢 Create a WebSocket Gateway Server</summary>
 
 Doc: [Gateways | NestJS](https://docs.nestjs.com/websockets/gateways)
 ```
@@ -288,9 +274,7 @@ export class myGateway implements OnModuleInit {
 
 </details>
 
-# 🟢 Make a client
-
-<details><summary></summary>
+<details><summary>🟢 Make a client</summary>
 
 Doc: [Gateways | NestJS](https://docs.nestjs.com/websockets/gateways)
 ```
