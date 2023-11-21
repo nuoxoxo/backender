@@ -2,7 +2,7 @@
 
 <!------------ Docker Prisma JWT IMPROV ------------>
 
-<details><summary>🟢 SNL - Serve next line </summary>
+<details><summary>🟢 SNL / Serve next line </summary>
 
 ### RUN
 ```
@@ -108,7 +108,7 @@ $ npm run start:dev
 
 <!------------ NGINX ------------>
 
-<details><summary>🟢 Nginx sandbox</summary>
+<details><summary>🟢 ngx / NGINX demo</summary>
 
 ### RUN nginx
 ```j
