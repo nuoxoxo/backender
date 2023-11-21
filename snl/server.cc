@@ -4,10 +4,16 @@
 #include "unistd.h"
 #include "netinet/in.h"
 #include "arpa/inet.h" // inet_addr
+#include "algorithm" // shuffle
+#include "random" // default_random_engine
+#include "chrono" // system_clock
 
 #define MAX 77777
 #define BUFFSIZE 77777
 #define LOCALHOST "127.0.0.1" // 2130706433
+#define YC "\033[33m"
+#define CC "\033[36m"
+#define NC "\033[0m"
 
 std::vector<std::string> NATO = {
     "Alfa", "Bravo", "Charlie", "Delta", "Echo",
@@ -53,12 +59,12 @@ int main(int ac, char **v)
         std::cerr << "Wrong number of arguments" << std::endl;
         exit(1);
     }
-    /*
-    if ((sock = socket(AF_INET, SOCK_STREAM, 0)) == -1)
-    {
-        drop("Dropped: sock");
-    }
-    */
+
+    // std::random_shuffle ( NATO.begin(), NATO.end());
+    // random_shuffle was deprecated in C++14 and removed in C++17
+
+    unsigned int    SEED = std::chrono::system_clock::now().time_since_epoch().count();
+    std::shuffle ( NATO.begin(), NATO.end(), std::default_random_engine( SEED ));
     port = atoi(v[1]);
     create_socket();
     bind_and_listen( port );
@@ -140,7 +146,7 @@ void    handle_consumer_input(int fd)
     if ((rune = recv(fd, buff, BUFFSIZE, 0)) < 1)
     {
         speak(fd,
-            "::" + NATO[uuid[fd] % (int) NATO.size()] + " just left the chat:: \n"
+            YC + NATO[uuid[fd] % (int) NATO.size()] + " just left the chat " NC
         );
         close(fd);
         inbox[fd] = "";
@@ -154,7 +160,7 @@ void    handle_consumer_input(int fd)
         inbox[fd] += buff;
         while (get_next_line(inbox[fd], s))
         {
-            speak(fd, NATO[uuid[fd]] + ": " + s);
+            speak(fd, CC + NATO[uuid[fd]] + NC + ": " + s);
         }
     }
 }
@@ -170,7 +176,7 @@ void handle_incoming_conn(void)
     uuid[conn] = num++;
     inbox[conn] = "";
     speak(conn,
-        "::" + NATO[(uuid[conn])] + " just joined the chat:: \n");
+        YC + NATO[(uuid[conn])] + " just joined the chat " NC);
     FD_SET(conn, & AA);
 }
 
