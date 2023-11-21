@@ -166,7 +166,7 @@ $ docker stop $(docker ps -aq)
 
 <details><summary>🟢 Create a WebSocket Gateway Server</summary>
 
-Doc: [Gateways | NestJS](https://docs.nestjs.com/websockets/gateways)
+### Doc: [Gateways | NestJS](https://docs.nestjs.com/websockets/gateways)
 ```
 *
 ↓
@@ -276,7 +276,7 @@ export class myGateway implements OnModuleInit {
 
 <details><summary>🟢 Make a client</summary>
 
-Doc: [Gateways | NestJS](https://docs.nestjs.com/websockets/gateways)
+### Doc: [Gateways | NestJS](https://docs.nestjs.com/websockets/gateways)
 ```
 *
 ↓
