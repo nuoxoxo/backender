@@ -53,10 +53,12 @@ int main(int ac, char **v)
         std::cerr << "Wrong number of arguments" << std::endl;
         exit(1);
     }
+    /*
     if ((sock = socket(AF_INET, SOCK_STREAM, 0)) == -1)
     {
-        drop("Dropped");
+        drop("Dropped: sock");
     }
+    */
     port = atoi(v[1]);
     create_socket();
     bind_and_listen( port );
@@ -68,7 +70,7 @@ int main(int ac, char **v)
         RR = WW = AA;
         if (select(top + 1, & RR, & WW, nullptr, nullptr) < 0)
         {
-            drop("Dropped");
+            drop("Dropped: select");
         }
         int fd = -1;
         while (++fd <= top)
@@ -104,7 +106,7 @@ void create_socket ()
 {
     if ((sock = socket(AF_INET, SOCK_STREAM, 0)) == -1)
     {
-        drop("Dropped at sock");
+        drop("Dropped: sock");
     }
 }
 
@@ -117,14 +119,14 @@ void    bind_and_listen(int port)
     servaddr.sin_port = htons(port);
     if (bind(sock, (const struct sockaddr *) & servaddr, sizeof(servaddr)) == -1)
     {
-        drop("Dropped at bind");
+        drop("Dropped: bind");
     }
     else
     {
         std::cout << "bind ok \n";
         if (listen(sock, 10) == -1)
         {
-            drop("Dropped at listen");
+            drop("Dropped: listen");
         }
     }
     std::cout << "on port " << port << "\n";
@@ -137,8 +139,9 @@ void    handle_consumer_input(int fd)
 
     if ((rune = recv(fd, buff, BUFFSIZE, 0)) < 1)
     {
-        speak(fd, NATO[uuid[fd] % (int) NATO.size()] + " just left the chat\n");
-        std::cout << NATO[uuid[fd] % (int) NATO.size()] + " just left chat\n";
+        speak(fd,
+            "::" + NATO[uuid[fd] % (int) NATO.size()] + " just left the chat:: \n"
+        );
         close(fd);
         inbox[fd] = "";
         FD_CLR(fd, & AA);
@@ -166,8 +169,8 @@ void handle_incoming_conn(void)
     top = std::max(top, conn);
     uuid[conn] = num++;
     inbox[conn] = "";
-    speak(conn, NATO[(uuid[conn])] + " just joined the chat\n");
-    std::cout << NATO[uuid[conn] % (int) NATO.size()] + " just joined the chat\n";
+    speak(conn,
+        "::" + NATO[(uuid[conn])] + " just joined the chat:: \n");
     FD_SET(conn, & AA);
 }
 
@@ -175,6 +178,11 @@ void speak(int ff, const std::string & s)
 {
     int fd = -1;
 
+    std::cout << s;
+    if (s != "" && s[s.size() - 1] != '\n')
+    {
+        std::cout << '\n';
+    }
     while (++fd < top + 1)
     {
         if (FD_ISSET(fd, & WW) && fd != ff)
