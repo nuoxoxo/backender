@@ -1,6 +1,17 @@
 <!------------  ------------>
 
+<!------------ Docker Prisma JWT IMPROV ------------>
 
+# 🟢 SNL - Serve next line 
+### RUN
+```
+$ make
+$ nc -v localhost PORT 
+```
+```
+$ nc -v "nchamber-nseat" PORT 
+* on another post
+```
 
 <!------------ Docker Prisma JWT IMPROV ------------>
 
