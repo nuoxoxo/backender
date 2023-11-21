@@ -3,7 +3,7 @@
 
 *sandbox/*.js
 !*sandbox/runner*.js
-./package-lock.json
+package-lock.json
 */public/*
 !*/public/index.html
 *ts/src/*.js
