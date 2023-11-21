@@ -3,6 +3,9 @@
 <!------------ Docker Prisma JWT IMPROV ------------>
 
 # 🟢 SNL - Serve next line 
+
+<details><summary></summary>
+
 ### RUN
 ```
 $ make
@@ -13,9 +16,14 @@ $ nc -v "nchamber-nseat" PORT
 * on another post
 ```
 
+</details>
+
 <!------------ Docker Prisma JWT IMPROV ------------>
 
 # 🟢 Docker Prisma Jwt Improv. 
+
+<details><summary></summary>
+
 ### RUN : 1 - Server
 ```c
 $ npm run go
@@ -37,10 +45,15 @@ or
 $ docker compose down
 $ docker ps
 ``` 
+
+</details>
 
 <!------------ Docker Prisma JWT ------------>
 
 # 🟢 Docker Prisma JWT 
+
+<details><summary></summary>
+
 ### RUN : 1 - Server
 ```c
 $ npm run go
@@ -63,10 +76,14 @@ $ docker compose down
 $ docker ps
 ``` 
 
+</details>
 
 <!------------ OAUTH 42 ------------>
 
 # 🟢 OAUTH 42 
+
+<details><summary></summary>
+
 ### SETUP
 - Go to Settings > API > register a new app
 - Set Redirect URI to <kbd>http://localhost:10086/auth/42/callback</kbd>
@@ -78,9 +95,14 @@ $ npm i
 $ npm run start:dev
 ```
 
+</details>
+
 <!------------ OAUTH Google ------------>
 
 # 🟢 OAUTH Google 
+
+<details><summary></summary>
+
 ### SETUP
 - Go to <kbd>https://console.cloud.google.com/apis/credentials</kbd>
 - Set Redirect URI to <kbd>http://localhost:10086/auth/google/callback</kbd>
@@ -92,10 +114,14 @@ $ npm i
 $ npm run start:dev
 ```
 
+</details>
 
 <!------------ NGINX ------------>
 
 # 🟢 Nginx sandbox
+
+<details><summary></summary>
+
 ### RUN nginx
 ```j
 $ cd ~
@@ -148,7 +174,12 @@ $ kill -9 PID
 $ docker stop $(docker ps -aq)  
 ```
 
+</details>
+
 # 🟢 Create a WebSocket Gateway Server
+
+<details><summary></summary>
+
 Doc: [Gateways | NestJS](https://docs.nestjs.com/websockets/gateways)
 ```
 *
@@ -255,8 +286,12 @@ export class myGateway implements OnModuleInit {
 }
 ```
 
+</details>
 
 # 🟢 Make a client
+
+<details><summary></summary>
+
 Doc: [Gateways | NestJS](https://docs.nestjs.com/websockets/gateways)
 ```
 *
@@ -305,6 +340,8 @@ import { SocketClient } from "./socket";
 
 export class SocketModule {}
 ```
+
+</details>
 
 <!------------ FOOTNOTE ------------>
 
