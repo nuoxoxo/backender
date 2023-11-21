@@ -2,22 +2,6 @@
 
 <!------------ Docker Prisma JWT IMPROV ------------>
 
-<details><summary>🟢 SNL • Serve next line </summary>
-
-### RUN
-```
-$ make
-$ nc -v localhost PORT 
-```
-```
-$ nc -v "nchamber-nseat" PORT 
-* on another post
-```
-
-</details>
-
-<!------------ Docker Prisma JWT IMPROV ------------>
-
 <details><summary>🟢 Docker Prisma Jwt Improv. </summary>
 
 ### RUN : 1 - Server
@@ -69,40 +53,6 @@ or
 $ docker compose down
 $ docker ps
 ``` 
-
-</details>
-
-<!------------ OAUTH 42 ------------>
-
-<details><summary>🟢 OAUTH 42 </summary>
-
-### SETUP
-- Go to Settings > API > register a new app
-- Set Redirect URI to <kbd>http://localhost:10086/auth/42/callback</kbd>
-### RUN
-```c
-$ npm run go
-or
-$ npm i
-$ npm run start:dev
-```
-
-</details>
-
-<!------------ OAUTH Google ------------>
-
-<details><summary>🟢 OAUTH Google </summary>
-
-### SETUP
-- Go to <kbd>https://console.cloud.google.com/apis/credentials</kbd>
-- Set Redirect URI to <kbd>http://localhost:10086/auth/google/callback</kbd>
-### RUN
-```c
-$ npm run go
-or
-$ npm i
-$ npm run start:dev
-```
 
 </details>
 
@@ -164,7 +114,59 @@ $ docker stop $(docker ps -aq)
 
 </details>
 
-<details><summary>🟢 Create a WebSocket Gateway Server</summary>
+<!------------ OAUTH 42 ------------>
+
+<details><summary>🟢 OAUTH 42 </summary>
+
+### SETUP
+- Go to Settings > API > register a new app
+- Set Redirect URI to <kbd>http://localhost:10086/auth/42/callback</kbd>
+### RUN
+```c
+$ npm run go
+or
+$ npm i
+$ npm run start:dev
+```
+
+</details>
+
+<!------------ OAUTH Google ------------>
+
+<details><summary>🟢 OAUTH Google </summary>
+
+### SETUP
+- Go to <kbd>https://console.cloud.google.com/apis/credentials</kbd>
+- Set Redirect URI to <kbd>http://localhost:10086/auth/google/callback</kbd>
+### RUN
+```c
+$ npm run go
+or
+$ npm i
+$ npm run start:dev
+```
+
+</details>
+
+<!------------ SNL Serve next line ------------>
+
+<details><summary>🟢 SNL • Serve next line </summary>
+
+### RUN
+```
+$ make
+$ nc -v localhost PORT 
+```
+```
+$ nc -v "nchamber-nseat" PORT 
+* on another post
+```
+
+</details>
+
+<!------------ WebSocket Gateway ------------>
+
+<details><summary>🟢 Create a WebSocket gateway</summary>
 
 ### Doc: [Gateways | NestJS](https://docs.nestjs.com/websockets/gateways)
 ```
@@ -274,7 +276,9 @@ export class myGateway implements OnModuleInit {
 
 </details>
 
-<details><summary>🟢 Make a client</summary>
+<!------------ WebSocket Client ------------>
+
+<details><summary>🟢 Make a client socket</summary>
 
 ### Doc: [Gateways | NestJS](https://docs.nestjs.com/websockets/gateways)
 ```
