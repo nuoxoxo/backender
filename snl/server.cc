@@ -14,7 +14,7 @@
 #define YC "\033[33m"
 #define CC "\033[36m"
 #define NC "\033[0m"
-#define INTERVAL 60
+#define INTERVAL 1800
 
 std::vector<std::string> NATO = {
     "Alfa", "Bravo", "Charlie", "Delta", "Echo",
